@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import ru.otus.spring10.domain.Person;
-import ru.otus.spring10.repostory.PersonRepository;
+//import ru.otus.spring10.repostory.PersonRepository;
 
 import javax.annotation.PostConstruct;
 
@@ -17,11 +17,11 @@ public class Main {
         SpringApplication.run(Main.class);
     }
 
-    @Autowired
-    private PersonRepository repository;
+//    @Autowired
+//    private PersonRepository repository;
 
     @PostConstruct
     public void init() {
-        repository.save(new Person("Pushkin"));
+//        repository.save(new Person("Pushkin"));
     }
 }
